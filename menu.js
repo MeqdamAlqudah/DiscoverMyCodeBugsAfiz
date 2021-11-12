@@ -141,7 +141,7 @@ const openPopup6 = function () {
 };
 
 const closePopup6 = function () {
-  document.querySelector('.popup-6').classList.add('hidden');
+  document.querySelector('.popup-6').classList.add('hiden');
   document.querySelector('.About-myself').classList.remove('hidden');
   document.querySelector('.form').classList.remove('hidden');
   document.querySelector('.headline').classList.remove('hidden');
@@ -163,7 +163,7 @@ const xButton = function (x) {
 // menu
 document.querySelector('.cancel').addEventListener('click', closeMenu);
 document.querySelector('.menu-button-selector').addEventListener('click', openMenu);
-document.querySelector('.Hello').addEventListener('click', closeMenu);
+document.querySelector('.Hello').addEventListener('cick', closeMenu);
 document.querySelector('.portfolio').addEventListener('click', closeMenu);
 document.querySelector('.About').addEventListener('click', closeMenu);
 document.querySelector('.contact').addEventListener('click', closeMenu);
@@ -238,7 +238,7 @@ const message = document.getElementById('Message');
 // preserve-form-data
 
 const preserveData = function (userName, message, email) {
-  let formId = {};
+  let formId = [];
   if (localStorage.getItem('formId')) {
     formId = JSON.parse(localStorage.getItem('formId'));
   }
